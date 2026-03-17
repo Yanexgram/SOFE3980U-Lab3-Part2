@@ -1,15 +1,15 @@
 # Lab 3 Part 2: Continuous Integration and Continuous Delivery (Jenkins)
 ## Objective   
-1. Get Familiar with Jenkins.
-2. Understand the pipeline syntax used by Jenkins.
+1. Gain hands-on experience with Jenkins.
+2. Learn and Understand Jenkins pipeline syntax.
 3. Configure a continuous integration pipeline for a Jenkins job. 
 4. Configure a continuous deployment pipeline for a Jenkins job.
 ## Repository:   
 [https://github.com/zubxxr/SOFE3980U-Lab3-Part2](https://github.com/zubxxr/SOFE3980U-Lab3-Part2) 
 
 ## Introduction and Getting Started 
-1. Watch the following video about [Dev-ops](https://www.youtube.com/watch?v=LFDrDnKPOTg). 
-2. Install Jenkins Server on GCP, using Helm. Helm is a tool that creates customized applications within Kubernetes.
+1. Watch an introductory video on [Dev-ops](https://www.youtube.com/watch?v=LFDrDnKPOTg). 
+2. Install Jenkins Server on GCP, using Helm. A kubernetes package manager used to deploy and manage applications.
    1. Watch the following video about [Helm](https://www.youtube.com/watch?v=fy8SHvNZGeE).
    2. If there is no Kubernetes cluster within your GCP project, Create a cluster as illustrated in [Lab 3 Part 1](https://github.com/zubxxr/SOFE3980U-Lab3-Part1#setup-google-kubernetes-engine-gke). To get the cluster information.
       ```cmd
@@ -58,13 +58,13 @@
    ![pd_2](figures/pd_2.jpg)
    
 ## Create a Maven project job
-1. Create a GitHub account if you don't have one. Fork this [repository](https://github.com/zubxxr/SOFE3980U-Lab3-Part2).
-2. Create a GitHub token: Within the GitHub page, login into your account. Choose  **settings**, **Developer settings**, **Personal access token**, and **Token (classic)**. Click **Generate new token**. Select **Generate new token (classic)**. Set the note, check **public_repo**, and click **Generate token**. Finally, copy the token code.
+1. Create a GitHub account repository. Fork this [repository](https://github.com/zubxxr/SOFE3980U-Lab3-Part2).
+2. Generste a GitHub Personal Access token for autthentication: Within the GitHub page, login into your account. Choose  **settings**, **Developer settings**, **Personal access token**, and **Token (classic)**. Click **Generate new token**. Select **Generate new token (classic)**. Set the note, check **public_repo**, and click **Generate token**. Finally, copy the token code.
    - **Make sure to copy and store it because you will not be able to see it again after leaving that page. You will have to regenerate it if you do, which is not an issue, but the token code will change.**
    
    ![sq4_7](figures/sq4_7.jpg)
    
-4. Install **Pipeline Maven Integration** Plugin: select **Dashboard**, **Manage Jenkins**, then **Manage Plugins**. Choose **Available Plugins**. Search for **Pipeline Maven Integration**. After checking it, click **Download now and install after restart**. Check **Restart Jenkins when installation is complete and no jobs are running**. Finally, wait until the plugin is installed and Jenkins restarts.
+4. Install  reuired jenkins plugins: **Pipeline Maven Integration** Plugin: select **Dashboard**, **Manage Jenkins**, then **Manage Plugins**. Choose **Available Plugins**. Search for **Pipeline Maven Integration**. After checking it, click **Download now and install after restart**. Check **Restart Jenkins when installation is complete and no jobs are running**. Finally, wait until the plugin is installed and Jenkins restarts.
 
    ![sq4_4](figures/sq4_4.jpg)
    
@@ -282,7 +282,7 @@ What do pipeline, node, agent, stage, and steps mean in the context of Jenkins?
      ![image](https://github.com/user-attachments/assets/ba462c43-db83-42be-aae6-2842db642014)
 
 ## Deliverable
-* A report containing both the discussion and design parts.
-* Your Github link and video links in the report.
-* An audible video of about 3 minutes showing the continuous integration part (the two techniques).
+* Report including discussion and design sections.
+* Your Github repository link.
+* Two short videos (~3 minutes each): (the two techniques).
 * An audible video of about 3 minutes showing the design part.
